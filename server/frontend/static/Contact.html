@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Best Cars Dealership</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #1c3a5e 0%, #2c5282 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .contact-info-card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            padding: 30px;
+            height: 100%;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .contact-info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .contact-icon {
+            font-size: 2.5rem;
+            color: #2c5282;
+            margin-bottom: 15px;
+        }
+        .contact-info-card h5 {
+            color: #1c3a5e;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .contact-form-card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            padding: 35px;
+        }
+        .contact-form-card h4 {
+            color: #1c3a5e;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .btn-primary-custom {
+            background-color: #2c5282;
+            border-color: #2c5282;
+            padding: 10px 30px;
+            font-weight: 500;
+        }
+        .btn-primary-custom:hover {
+            background-color: #1c3a5e;
+            border-color: #1c3a5e;
+        }
+        .hours-list li {
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+        .location-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar (Contact Us active) -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c3a5e;">
+        <a class="navbar-brand" href="/djangoapp/">
+            <strong>Best Cars</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/djangoapp/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/djangoapp/about">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/djangoapp/contact">Contact Us
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/djangoapp/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/djangoapp/registration">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container text-center">
+            <h1 class="display-4">Contact Us</h1>
+            <p class="lead mt-3">
+                Have questions about a vehicle, want to schedule a test drive,
+                or need help with an existing purchase? We're here to help.
+                Reach out to us through any of the channels below.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="container mb-5">
+        <div class="row">
+
+            <!-- Address -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-info-card text-center">
+                    <div class="contact-icon">&#128205;</div>
+                    <h5>Visit Our Dealership</h5>
+                    <p class="text-muted mb-1"><strong>Best Cars Dealership</strong></p>
+                    <p class="text-muted mb-0">
+                        1245 Auto Plaza Drive<br>
+                        Kansas City, KS 66101<br>
+                        United States
+                    </p>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-info-card text-center">
+                    <div class="contact-icon">&#128222;</div>
+                    <h5>Call Us</h5>
+                    <p class="text-muted mb-1"><strong>Sales:</strong> (913) 555-0142</p>
+                    <p class="text-muted mb-1"><strong>Service:</strong> (913) 555-0168</p>
+                    <p class="text-muted mb-0"><strong>Toll-Free:</strong> 1-800-555-CARS</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-info-card text-center">
+                    <div class="contact-icon">&#9993;</div>
+                    <h5>Email Us</h5>
+                    <p class="text-muted mb-1">
+                        <strong>General Inquiries:</strong><br>
+                        <a href="mailto:info@bestcars.example.com">info@bestcars.example.com</a>
+                    </p>
+                    <p class="text-muted mb-1">
+                        <strong>Sales:</strong><br>
+                        <a href="mailto:sales@bestcars.example.com">sales@bestcars.example.com</a>
+                    </p>
+                    <p class="text-muted mb-0">
+                        <strong>Support:</strong><br>
+                        <a href="mailto:support@bestcars.example.com">support@bestcars.example.com</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Hours, Image, and Contact Form -->
+    <section class="container mb-5">
+        <div class="row">
+
+            <!-- Business Hours + Dealership Image -->
+            <div class="col-lg-5 mb-4">
+                <div class="contact-info-card">
+                    <h5>Business Hours</h5>
+                    <ul class="list-unstyled hours-list text-muted mt-3">
+                        <li><strong>Monday - Friday:</strong> &nbsp; 8:00 AM - 8:00 PM</li>
+                        <li><strong>Saturday:</strong> &nbsp; 9:00 AM - 6:00 PM</li>
+                        <li><strong>Sunday:</strong> &nbsp; 11:00 AM - 5:00 PM</li>
+                        <li><strong>Service Center (Mon-Fri):</strong> &nbsp; 7:30 AM - 6:00 PM</li>
+                        <li><strong>Holidays:</strong> &nbsp; Closed on major holidays</li>
+                    </ul>
+
+                    <img class="location-img"
+                         src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80"
+                         alt="Best Cars Dealership building exterior">
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7 mb-4">
+                <div class="contact-form-card">
+                    <h4>Send Us a Message</h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName"
+                                       placeholder="John" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName"
+                                       placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddr">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddr"
+                                   placeholder="john.doe@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNum">Phone Number <span class="text-muted">(optional)</span></label>
+                            <input type="tel" class="form-control" id="phoneNum"
+                                   placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select class="form-control" id="subject">
+                                <option>General Inquiry</option>
+                                <option>Vehicle Purchase</option>
+                                <option>Test Drive Request</option>
+                                <option>Service Appointment</option>
+                                <option>Financing Question</option>
+                                <option>Feedback / Complaint</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5"
+                                      placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-primary-custom">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-light py-4 mt-5" style="background-color: #1c3a5e;">
+        <p class="mb-1">&copy; 2026 Best Cars Dealership. All rights reserved.</p>
+        <p class="mb-0 small">
+            <a href="/djangoapp/about" class="text-light">About</a> &nbsp;|&nbsp;
+            <a href="/djangoapp/contact" class="text-light">Contact</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+</body>
+</html>
